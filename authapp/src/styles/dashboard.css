@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+h3 {
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    min-width: 600px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #2980b9;
+    color: white;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Add Item Form Styles */
+.add-item-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-item-container input {
+    padding: 8px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.add-item-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-item-btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Skeleton Loader */
+.skeleton-loader {
+    width: 100%;
+    height: 150px;
+    background: #ddd;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #ddd;
+    }
+    50% {
+        background-color: #f4f4f4;
+    }
+    100% {
+        background-color: #ddd;
+    }
+}
+
+.logout-btn {
+    cursor: pointer;
+    background-color: #d01e1e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #700a0a;
+}
+
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.message-container {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-container.error {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 200px;
+}
+
+.message-container.success {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 200px;
+}
+
+.message.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.message.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.add-user-btn {
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-user-btn:hover {
+    background-color: #45a049;
+}
+
+/* Mobile Styles for smaller phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    .add-item-container {
+        width: 94%;
+        padding: 10px;
+    }
+
+    .add-item-container input {
+        width: 90%;
+    }
+
+    .add-item-btn {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .message-container {
+        max-width: 90%;
+    }
+
+    .add-user-btn {
+        top: 110px;
+        right: 30px;
+        padding: 8px 12px;
+    }
+
+    .logout-btn {
+        width: 100%;
+        padding: 8px;
+    }
+}
